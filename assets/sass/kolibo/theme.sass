@@ -1,0 +1,670 @@
+@import "kolibo/partials/base"
+@import "kolibo/partials/bootstrap"
+@import "kolibo/partials/bootstrap.responsive"
+@import "kolibo/partials/fonts"
+@import "kolibo/partials/pfold"
+
+@import "compass/css3"
+@import "compass/reset/utilities"
+@import "compass/utilities"
+
+
+/* == Base Stylings == */
+body, html
+  +helvetica-content(13px, 18px)
+
+body
+  overflow-x: hidden 
+  background: white image-url('kolibo/bg-stripe-body.png') repeat-x left top
+
+.container
+  position: relative
+  
+.container.mobile
+  +helvetica-content(18px, 24px)
+  
+  p
+    margin: 0 0 20px 0
+    
+  h3
+    +helvetica-bold(24px, 30px)
+    margin: 0 0 15px 0
+    color: $highlight
+    
+
+/* == Floatings == */
+.fl
+  float: left
+  margin-right: 10px
+.fr
+  float: right
+a:link,a:visited,a:active,a:focus,a:hover
+  outline: 0 none
+  
+
+header
+  display: block
+  height: 131px
+
+  #knm-logo
+    display: block
+    float: left
+    width: 400px
+    height: 20px
+    background: white image-url('kolibo/knm-logo.png') no-repeat left top
+    text-indent: -7500px
+    margin: 50px 0 0 0
+
+  nav
+    display: block
+    float: left
+
+    ul
+      +reset-box-model
+      +reset-list-style
+      margin: 50px 0 0 0
+
+      li
+        display: inline-block
+        margin: 0 10px 0 0
+
+        a
+          &:link, &:active, &:hover, &:focus, &:visited
+            display: block
+            color: $light-color
+            background: $bg-color
+            padding: 0 10px
+            height: 30px
+            text-transform: uppercase
+            text-decoration: none
+            +helvetica-content(13px, 30px)
+            +single-transition(all, 0.1s, ease-in-out)
+
+          &:hover, &:focus
+            color: white
+            background: $highlight
+
+        a.meta
+          display: block
+          color: $highlight
+          background: transparent
+          margin: 0 10px
+          height: 30px
+          text-transform: uppercase
+          text-decoration: none
+          +helvetica-content(13px, 30px)
+          +single-transition(all, 0.1s, ease-in-out)
+
+          &:hover, &:focus
+            color: $dark-color
+
+  #knm-stoerer
+    display: block
+    float: right
+    width: 140px
+    height: 106px
+    margin: 24px 0 0 0
+    color: white
+    text-indent: -7500px
+    background: white image-url('kolibo/knm-stoerer.png') no-repeat left top
+
+footer
+  font-size: 90%
+  margin: 15px 0
+  color: $light-color
+
+section#content
+  position: relative
+
+  /* == Teaser == */
+  #hero-teaser
+    position: relative
+    padding: 0
+    margin: 0
+    +pie-clearfix
+
+    img
+      display: block
+      position: relative
+
+    .hero-section
+      display: block
+      position: absolute
+      left: 400px
+      top: 127px
+
+      h1
+        display: block
+        float: left
+        padding: 0 10px
+        margin: 0
+        height: 39px
+        +helvetica-bold(24px, 39px)
+        background: $dark-color
+        color: white
+
+      p
+        clear: both
+        display: block
+        float: left
+        margin: 0
+        padding: 10px 10px
+        +helvetica-bold(36px, 39px)
+        background: white
+        color: $dark-color
+        +pie-clearfix
+
+      small
+        clear: both
+        display: block
+        float: right
+        padding: 0 10px
+        margin: 0
+        height: 22px
+        +helvetica-content(13px, 22px)
+        background: $dark-color
+        color: white
+
+  > .row
+    +pie-clearfix
+
+  /* == Product Container == */
+  #fold-container
+    position: relative
+    margin-top: 15px
+
+  .uc-container
+    width: 370px
+    height: 200px
+    margin-top: 15px
+    margin-bottom: 15px
+
+  .uc-single, 
+  .uc-final,
+  .uc-initial-content,
+  .uc-back,
+  .uc-front
+    background: $highlight2 image-url("kolibo/noise.png") repeat top left
+
+  .uc-initial
+    position: relative
+    border: 1px solid $border-color
+    
+    &:hover 
+      .uc-initial-info
+        background: $dark-color
+        > h3
+          color: white
+        > p
+          color: white
+
+      span.entypo-mouse
+        color: white
+        background: rgba(0,0,0,0.5)
+
+  .uc-current
+    .uc-initial
+      border: 0px none
+
+  .uc-initial-info
+    padding: 8px 10px
+    background: $bg-color
+    +single-transition(all, 0.3s, linear)
+
+    > h3
+      margin: 0
+      padding: 0
+      color: $light-color2
+      +helvetica-content(13px, 19px, bold)
+    > p
+      margin: 0
+      padding: 0
+      color: $light-color
+      +helvetica-content(13px, 15px, normal)
+  
+  span.entypo-mouse
+    position: absolute
+    top: 0px
+    left: 0px
+    text-indent: 4px
+    font-size: 100px
+    color: transparent
+    color: rgba(255,255,255,0)
+    width: 100%
+    height: 150px
+    line-height: 145px
+    text-align: center
+    background: rgba(0,0,0,0)
+    cursor: pointer
+    +backface-visibility(hidden)
+    +single-transition(all, 0.3s, linear)
+
+  .uc-single
+    span.entypo-mouse
+      display: none
+
+  .uc-product-unfolded
+    margin: 3px
+
+    .uc-product-left
+      display: block
+      float: left
+      width: 394px
+      height: 394px
+      overflow: hidden
+      background: white
+
+    .uc-product-right
+      display: block
+      position: relative
+      float: left
+      width: 340px
+      height: 394px
+      padding: 0
+      background: $bg-color
+
+      .uc-product-infos, .uc-product-order
+        position: absolute
+        width: 290px
+        height: 354px
+        left: 25px
+        top: 15px
+        +single-transition(all, 0.2s, linear)
+
+      .uc-product-infos
+        z-index: 2
+
+      .uc-product-order
+        +opacity(0)
+        visibility: hidden
+        z-index: 7
+
+      span.loader
+        display: block
+        position: absolute
+        width: 100%
+        height: 100%
+        left: 0px
+        top: 0px
+        +opacity(0)
+        visibility: hidden
+        z-index: 7
+        +single-transition(all, 0.2s, linear)
+        background: $bg-color image-url('kolibo/ajax-loader.gif') no-repeat center center
+
+    h5
+      +helvetica-bold(22px, 24px)
+      margin: 0 0 0 0
+      color: $highlight2
+      
+    
+      &.subheader
+        color: $dark-color
+        margin: 2px 0 8px 0
+        +helvetica-light(20px, 20px)
+
+    p
+      margin: 10px 0
+
+    ul
+      padding: 0
+      margin: 0 0 10px 0
+      +reset-list-style
+
+      li
+        position: relative
+        margin: 0 0 5px 0
+        padding: 0 0 0 25px
+
+      li:before
+        display: block
+        position: absolute
+        left: 0px
+        top: 0px
+        width: 25px
+        height: 25px
+        font: normal 32px/19px 'entypo'
+        speak: none
+        text-decoration: inherit
+        text-align: left
+        content: '➡'
+
+    a.btn.open-form
+      margin: 10px 0 0 25px
+
+  span.entypo-cancel
+    position: absolute
+    right: 5px
+    top: 5px
+    font-size: 32px
+    padding: 0
+    text-align: center
+    cursor: pointer
+    color: $light-color
+    +backface-visibility(hidden)
+    +single-transition(all, 0.2s, ease-in-out)
+    z-index: 4
+
+    &:before
+      margin-right: 0
+      height: 25px
+      width: 25px
+      line-height: 26px
+
+    &:hover
+      color: $dark-color
+
+
+  #sidebar
+    margin-top: 30px
+
+    .row
+      margin-bottom: 30px
+
+    #introbox
+      height: 201px
+
+    h2
+      display: block
+      margin: 0
+      +helvetica-bold(24px, 30px)
+      color: $dark-color
+
+    p
+      +helvetica-content(13px, 18px)
+
+    p.subline
+      +helvetica-light(20px, 20px)
+      margin: 0 0 15px 0
+
+  /* == Special Product Container == */
+  .uc-special-container
+    position: relative
+    height: 430px
+
+    .uc-initial
+      border-color: $highlight
+      +box-sizing('border-box')
+    
+    .uc-product-folded
+      height: 428px
+
+      span.entypo-mouse
+        height: 428px
+        line-height: 420px
+        top: 0px
+        left: 0px
+        text-indent: 11px
+        z-index: 1
+
+    .uc-product-unfolded
+      margin: 3px
+
+      .uc-product-left, 
+      .uc-product-right
+        height: 424px
+
+      h5
+        color: $highlight
+
+      h5.subheader
+        color: $dark-color
+
+      .popover
+        position: relative
+        display: block !important
+        width: 290px
+
+    .uc-single, 
+    .uc-final, 
+    .uc-initial-content, 
+    .uc-back, 
+    .uc-front
+      background: $highlight
+
+    &:before
+      display: block
+      content: ""
+      position: absolute
+      left: -10px
+      top: -9px
+      width: 172px
+      height: 172px
+      z-index: 2
+      background: transparent image-url('kolibo/knm-gewinnspiel.png') no-repeat left top
+
+    &.uc-current
+      z-index: 9999
+      .uc-initial
+        border: 0px none
+
+      span.entypo-mouse
+        +opacity(0)
+        visibility: hidden
+
+  /* == Contact Block == */
+  #contact
+    color: $light-color
+    background: $bg-color
+
+    #contact-content
+      height: 161px
+      padding: 20px 20px
+      
+      h2
+        color: $light-color
+
+      .fl
+        display: block
+        float: left
+        width: 25%
+        +helvetica-light(20px, 30px)
+
+      .fr
+        display: block
+        float: left
+        width: 70%
+        +helvetica-light(20px, 30px)
+
+    #contact-content:hover
+      color: $dark-color
+      +single-transition(all, 0.1s, ease-in-out)
+      
+      h2
+        color: $dark-color
+        +single-transition(all, 0.1s, ease-in-out)
+
+
+/* == Form Stylings == */
+
+.input-xsmall
+  width: 78px
+
+.input-small
+  width: 129px
+
+.input-medium
+  width: 180px
+
+.input-xlarge
+  width: 276px
+
+.form-row
+  +pie-clearfix
+  
+  &.mt10
+    margin-top: 5px
+
+.control-group
+  display: inline-block
+  position: relative
+  margin: 0
+
+  &.left
+    margin: 0
+  &.right
+    margin: 0
+
+  .controls
+    input[type="text"]
+      margin-bottom: 6px
+      height: 18px
+
+  .control-label
+    position: relative
+    color: $light-color
+    margin: 0 0 2px 0
+    line-height: 17px
+
+#order-form
+  margin: 4px 0 0 0
+
+  a.entypo-question
+    display: block
+    position: absolute
+    right: -53px
+    top: -10px
+    font-size: 34px
+    z-index: 5
+    &:hover, &:focus
+      text-decoration: none
+
+/* == Login Modal == */
+#knm-login
+  form
+    margin: 0
+
+  .modal-header
+    border: 0px
+    margin: 0
+
+  h3#knm-login-header
+    +helvetica-bold(24px, 30px)
+    margin: 0 0 5px 0
+
+  h4#knm-login-subheader
+    +helvetica-light(20px, 20px)
+    margin: 0
+
+  label#knm-login-label
+    color: $error-color
+    +helvetica-content(13px, 15px, bold)
+
+
+/* == Success Modal == */
+
+#knm-expired
+  form
+    margin: 0
+
+  .modal-header
+    border: 0px
+    margin: 0
+
+  h3#knm-expired-header
+    +helvetica-bold(24px, 30px)
+    margin: 0 0 5px 0
+
+  h4#knm-expired-subheader
+    +helvetica-light(20px, 20px)
+    margin: 0
+
+  label#knm-expired-label
+    color: $error-color
+    +helvetica-content(13px, 15px, bold)
+
+
+/* == Success Modal == */
+
+#knm-success
+  
+  .modal-header
+    border: 0px
+    margin: 0
+
+  h3#knm-success-header
+    +helvetica-bold(24px, 30px)
+    margin: 0 0
+
+  h4#knm-success-subheader
+    +helvetica-light(20px, 20px)
+    margin: 0 0
+
+  label#knm-success-label
+    color: $error-color
+    +helvetica-content(13px, 15px, bold)
+
+  .popover
+    display: block
+    float: left
+    position: relative
+    margin: 0 0 20px 0
+    width: 99%
+    box-shadow: none !important
+
+
+/* == Prepage Modal == */
+
+#knm-prepage
+
+  #myModalLabel
+    +helvetica-bold(24px, 30px)
+    margin: 0 0
+
+
+
+
+/* == No CSS Transformations == */
+.no-cssanimations .support-note span.no-cssanimations,
+.no-csstransforms .support-note span.no-csstransforms,
+.no-csstransforms3d .support-note span.no-csstransforms3d,
+.no-csstransitions .support-note span.no-csstransitions
+  display: block
+
+/* == Background Layer == */
+#background-layer
+  position: absolute
+  visibility: hidden
+  width: 100%
+  height: 100%
+  top: 0px
+  left: 0px
+  background-color: rgba(0, 0, 0, 0.85)
+  +single-transition(all, 0.3s, linear)
+  +opacity(0)
+  z-index: 4
+
+
+/* == Reset & Change Some Bootstrap Styles == */
+*
+  -webkit-border-radius: 0px !important
+  -moz-border-radius: 0px !important
+  -ms-border-radius: 0px !important
+  -o-border-radius: 0px !important
+  border-radius: 0px !important 
+
+.btn-primary
+  background: $highlight2
+  border: 1px solid $highlight2
+  
+  &:hover, &:focus
+    background: darken($highlight2, 5%)
+    outline: 0 none
+
+.close-btn
+  background: transparent
+  border: 0 none
+  color: $light-color2
+
+  &:hover, &:focus
+    color: $dark-color
+    background: transparent
+    outline: 0 none
+
+.popover
+  width: 320px
+  z-index: 10
+
+.input-append .add-on, .input-prepend .add-on
+  font-size: 12px
+  height: 18px

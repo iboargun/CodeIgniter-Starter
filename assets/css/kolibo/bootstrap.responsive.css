@@ -1,0 +1,1379 @@
+/* Bootstrap Responsive v2.2.1
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat. */
+/* line 10, ../../sass/kolibo/bootstrap.responsive.sass */
+.clearfix {
+  *zoom: 1;
+}
+/* line 12, ../../sass/kolibo/bootstrap.responsive.sass */
+.clearfix:before {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+/* line 16, ../../sass/kolibo/bootstrap.responsive.sass */
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+  clear: both;
+}
+
+/* line 22, ../../sass/kolibo/bootstrap.responsive.sass */
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+/* line 29, ../../sass/kolibo/bootstrap.responsive.sass */
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 37, ../../sass/kolibo/bootstrap.responsive.sass */
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+/* line 41, ../../sass/kolibo/bootstrap.responsive.sass */
+.visible-phone, .visible-tablet, .hidden-desktop {
+  display: none !important;
+}
+
+/* line 44, ../../sass/kolibo/bootstrap.responsive.sass */
+.visible-desktop {
+  display: inherit !important;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  /* line 48, ../../sass/kolibo/bootstrap.responsive.sass */
+  .hidden-desktop {
+    display: inherit !important;
+  }
+
+  /* line 50, ../../sass/kolibo/bootstrap.responsive.sass */
+  .visible-desktop {
+    display: none !important;
+  }
+
+  /* line 52, ../../sass/kolibo/bootstrap.responsive.sass */
+  .visible-tablet {
+    display: inherit !important;
+  }
+
+  /* line 54, ../../sass/kolibo/bootstrap.responsive.sass */
+  .hidden-tablet {
+    display: none !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 58, ../../sass/kolibo/bootstrap.responsive.sass */
+  .hidden-desktop {
+    display: inherit !important;
+  }
+
+  /* line 60, ../../sass/kolibo/bootstrap.responsive.sass */
+  .visible-desktop {
+    display: none !important;
+  }
+
+  /* line 62, ../../sass/kolibo/bootstrap.responsive.sass */
+  .visible-phone {
+    display: inherit !important;
+  }
+
+  /* line 64, ../../sass/kolibo/bootstrap.responsive.sass */
+  .hidden-phone {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 68, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row {
+    margin-left: -30px;
+    *zoom: 1;
+  }
+  /* line 71, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row:before {
+    display: table;
+    line-height: 0;
+    content: "";
+  }
+  /* line 75, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row:after {
+    display: table;
+    line-height: 0;
+    content: "";
+    clear: both;
+  }
+
+  /* line 80, ../../sass/kolibo/bootstrap.responsive.sass */
+  [class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 30px;
+  }
+
+  /* line 84, ../../sass/kolibo/bootstrap.responsive.sass */
+  .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container, .span12 {
+    width: 1170px;
+  }
+
+  /* line 86, ../../sass/kolibo/bootstrap.responsive.sass */
+  .span11 {
+    width: 1070px;
+  }
+
+  /* line 88, ../../sass/kolibo/bootstrap.responsive.sass */
+  .span10 {
+    width: 970px;
+  }
+
+  /* line 90, ../../sass/kolibo/bootstrap.responsive.sass */
+  .span9 {
+    width: 870px;
+  }
+
+  /* line 92, ../../sass/kolibo/bootstrap.responsive.sass */
+  .span8 {
+    width: 770px;
+  }
+
+  /* line 94, ../../sass/kolibo/bootstrap.responsive.sass */
+  .span7 {
+    width: 670px;
+  }
+
+  /* line 96, ../../sass/kolibo/bootstrap.responsive.sass */
+  .span6 {
+    width: 570px;
+  }
+
+  /* line 98, ../../sass/kolibo/bootstrap.responsive.sass */
+  .span5 {
+    width: 470px;
+  }
+
+  /* line 100, ../../sass/kolibo/bootstrap.responsive.sass */
+  .span4 {
+    width: 370px;
+  }
+
+  /* line 102, ../../sass/kolibo/bootstrap.responsive.sass */
+  .span3 {
+    width: 270px;
+  }
+
+  /* line 104, ../../sass/kolibo/bootstrap.responsive.sass */
+  .span2 {
+    width: 170px;
+  }
+
+  /* line 106, ../../sass/kolibo/bootstrap.responsive.sass */
+  .span1 {
+    width: 70px;
+  }
+
+  /* line 108, ../../sass/kolibo/bootstrap.responsive.sass */
+  .offset12 {
+    margin-left: 1230px;
+  }
+
+  /* line 110, ../../sass/kolibo/bootstrap.responsive.sass */
+  .offset11 {
+    margin-left: 1130px;
+  }
+
+  /* line 112, ../../sass/kolibo/bootstrap.responsive.sass */
+  .offset10 {
+    margin-left: 1030px;
+  }
+
+  /* line 114, ../../sass/kolibo/bootstrap.responsive.sass */
+  .offset9 {
+    margin-left: 930px;
+  }
+
+  /* line 116, ../../sass/kolibo/bootstrap.responsive.sass */
+  .offset8 {
+    margin-left: 830px;
+  }
+
+  /* line 118, ../../sass/kolibo/bootstrap.responsive.sass */
+  .offset7 {
+    margin-left: 730px;
+  }
+
+  /* line 120, ../../sass/kolibo/bootstrap.responsive.sass */
+  .offset6 {
+    margin-left: 630px;
+  }
+
+  /* line 122, ../../sass/kolibo/bootstrap.responsive.sass */
+  .offset5 {
+    margin-left: 530px;
+  }
+
+  /* line 124, ../../sass/kolibo/bootstrap.responsive.sass */
+  .offset4 {
+    margin-left: 430px;
+  }
+
+  /* line 126, ../../sass/kolibo/bootstrap.responsive.sass */
+  .offset3 {
+    margin-left: 330px;
+  }
+
+  /* line 128, ../../sass/kolibo/bootstrap.responsive.sass */
+  .offset2 {
+    margin-left: 230px;
+  }
+
+  /* line 130, ../../sass/kolibo/bootstrap.responsive.sass */
+  .offset1 {
+    margin-left: 130px;
+  }
+
+  /* line 132, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid {
+    width: 100%;
+    *zoom: 1;
+  }
+  /* line 135, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid:before {
+    display: table;
+    line-height: 0;
+    content: "";
+  }
+  /* line 139, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid:after {
+    display: table;
+    line-height: 0;
+    content: "";
+    clear: both;
+  }
+  /* line 144, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid [class*="span"] {
+    display: block;
+    float: left;
+    width: 100%;
+    min-height: 30px;
+    margin-left: 2.5641%;
+    *margin-left: 2.51091%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  /* line 154, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid [class*="span"]:first-child {
+    margin-left: 0;
+  }
+  /* line 156, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 2.5641%;
+  }
+  /* line 158, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .span12 {
+    width: 100%;
+    *width: 99.94681%;
+  }
+  /* line 161, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .span11 {
+    width: 91.45299%;
+    *width: 91.3998%;
+  }
+  /* line 164, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .span10 {
+    width: 82.90598%;
+    *width: 82.85279%;
+  }
+  /* line 167, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .span9 {
+    width: 74.35897%;
+    *width: 74.30578%;
+  }
+  /* line 170, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .span8 {
+    width: 65.81197%;
+    *width: 65.75877%;
+  }
+  /* line 173, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .span7 {
+    width: 57.26496%;
+    *width: 57.21177%;
+  }
+  /* line 176, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .span6 {
+    width: 48.71795%;
+    *width: 48.66476%;
+  }
+  /* line 179, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .span5 {
+    width: 40.17094%;
+    *width: 40.11775%;
+  }
+  /* line 182, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .span4 {
+    width: 31.62393%;
+    *width: 31.57074%;
+  }
+  /* line 185, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .span3 {
+    width: 23.07692%;
+    *width: 23.02373%;
+  }
+  /* line 188, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .span2 {
+    width: 14.52991%;
+    *width: 14.47672%;
+  }
+  /* line 191, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .span1 {
+    width: 5.98291%;
+    *width: 5.92971%;
+  }
+  /* line 194, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset12 {
+    margin-left: 105.12821%;
+    *margin-left: 105.02182%;
+  }
+  /* line 197, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset12:first-child {
+    margin-left: 102.5641%;
+    *margin-left: 102.45772%;
+  }
+  /* line 200, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset11 {
+    margin-left: 96.5812%;
+    *margin-left: 96.47481%;
+  }
+  /* line 203, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset11:first-child {
+    margin-left: 94.01709%;
+    *margin-left: 93.91071%;
+  }
+  /* line 206, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset10 {
+    margin-left: 88.03419%;
+    *margin-left: 87.92781%;
+  }
+  /* line 209, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset10:first-child {
+    margin-left: 85.47009%;
+    *margin-left: 85.3637%;
+  }
+  /* line 212, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset9 {
+    margin-left: 79.48718%;
+    *margin-left: 79.3808%;
+  }
+  /* line 215, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset9:first-child {
+    margin-left: 76.92308%;
+    *margin-left: 76.81669%;
+  }
+  /* line 218, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset8 {
+    margin-left: 70.94017%;
+    *margin-left: 70.83379%;
+  }
+  /* line 221, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset8:first-child {
+    margin-left: 68.37607%;
+    *margin-left: 68.26969%;
+  }
+  /* line 224, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset7 {
+    margin-left: 62.39316%;
+    *margin-left: 62.28678%;
+  }
+  /* line 227, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset7:first-child {
+    margin-left: 59.82906%;
+    *margin-left: 59.72268%;
+  }
+  /* line 230, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset6 {
+    margin-left: 53.84615%;
+    *margin-left: 53.73977%;
+  }
+  /* line 233, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset6:first-child {
+    margin-left: 51.28205%;
+    *margin-left: 51.17567%;
+  }
+  /* line 236, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset5 {
+    margin-left: 45.29915%;
+    *margin-left: 45.19276%;
+  }
+  /* line 239, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset5:first-child {
+    margin-left: 42.73504%;
+    *margin-left: 42.62866%;
+  }
+  /* line 242, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset4 {
+    margin-left: 36.75214%;
+    *margin-left: 36.64575%;
+  }
+  /* line 245, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset4:first-child {
+    margin-left: 34.18803%;
+    *margin-left: 34.08165%;
+  }
+  /* line 248, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset3 {
+    margin-left: 28.20513%;
+    *margin-left: 28.09875%;
+  }
+  /* line 251, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset3:first-child {
+    margin-left: 25.64103%;
+    *margin-left: 25.53464%;
+  }
+  /* line 254, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset2 {
+    margin-left: 19.65812%;
+    *margin-left: 19.55174%;
+  }
+  /* line 257, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset2:first-child {
+    margin-left: 17.09402%;
+    *margin-left: 16.98763%;
+  }
+  /* line 260, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset1 {
+    margin-left: 11.11111%;
+    *margin-left: 11.00473%;
+  }
+  /* line 263, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset1:first-child {
+    margin-left: 8.54701%;
+    *margin-left: 8.44063%;
+  }
+
+  /* line 266, ../../sass/kolibo/bootstrap.responsive.sass */
+  input, textarea, .uneditable-input {
+    margin-left: 0;
+  }
+
+  /* line 268, ../../sass/kolibo/bootstrap.responsive.sass */
+  .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 30px;
+  }
+
+  /* line 270, ../../sass/kolibo/bootstrap.responsive.sass */
+  input.span12, textarea.span12, .uneditable-input.span12 {
+    width: 1156px;
+  }
+
+  /* line 272, ../../sass/kolibo/bootstrap.responsive.sass */
+  input.span11, textarea.span11, .uneditable-input.span11 {
+    width: 1056px;
+  }
+
+  /* line 274, ../../sass/kolibo/bootstrap.responsive.sass */
+  input.span10, textarea.span10, .uneditable-input.span10 {
+    width: 956px;
+  }
+
+  /* line 276, ../../sass/kolibo/bootstrap.responsive.sass */
+  input.span9, textarea.span9, .uneditable-input.span9 {
+    width: 856px;
+  }
+
+  /* line 278, ../../sass/kolibo/bootstrap.responsive.sass */
+  input.span8, textarea.span8, .uneditable-input.span8 {
+    width: 756px;
+  }
+
+  /* line 280, ../../sass/kolibo/bootstrap.responsive.sass */
+  input.span7, textarea.span7, .uneditable-input.span7 {
+    width: 656px;
+  }
+
+  /* line 282, ../../sass/kolibo/bootstrap.responsive.sass */
+  input.span6, textarea.span6, .uneditable-input.span6 {
+    width: 556px;
+  }
+
+  /* line 284, ../../sass/kolibo/bootstrap.responsive.sass */
+  input.span5, textarea.span5, .uneditable-input.span5 {
+    width: 456px;
+  }
+
+  /* line 286, ../../sass/kolibo/bootstrap.responsive.sass */
+  input.span4, textarea.span4, .uneditable-input.span4 {
+    width: 356px;
+  }
+
+  /* line 288, ../../sass/kolibo/bootstrap.responsive.sass */
+  input.span3, textarea.span3, .uneditable-input.span3 {
+    width: 256px;
+  }
+
+  /* line 290, ../../sass/kolibo/bootstrap.responsive.sass */
+  input.span2, textarea.span2, .uneditable-input.span2 {
+    width: 156px;
+  }
+
+  /* line 292, ../../sass/kolibo/bootstrap.responsive.sass */
+  input.span1, textarea.span1, .uneditable-input.span1 {
+    width: 56px;
+  }
+
+  /* line 294, ../../sass/kolibo/bootstrap.responsive.sass */
+  .thumbnails {
+    margin-left: -30px;
+  }
+  /* line 296, ../../sass/kolibo/bootstrap.responsive.sass */
+  .thumbnails > li {
+    margin-left: 30px;
+  }
+
+  /* line 298, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .thumbnails {
+    margin-left: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  /* line 302, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row {
+    margin-left: -20px;
+    *zoom: 1;
+  }
+  /* line 305, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row:before {
+    display: table;
+    line-height: 0;
+    content: "";
+  }
+  /* line 309, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row:after {
+    display: table;
+    line-height: 0;
+    content: "";
+    clear: both;
+  }
+
+  /* line 314, ../../sass/kolibo/bootstrap.responsive.sass */
+  [class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 20px;
+  }
+
+  /* line 318, ../../sass/kolibo/bootstrap.responsive.sass */
+  .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container, .span12 {
+    width: 724px;
+  }
+
+  /* line 320, ../../sass/kolibo/bootstrap.responsive.sass */
+  .span11 {
+    width: 662px;
+  }
+
+  /* line 322, ../../sass/kolibo/bootstrap.responsive.sass */
+  .span10 {
+    width: 600px;
+  }
+
+  /* line 324, ../../sass/kolibo/bootstrap.responsive.sass */
+  .span9 {
+    width: 538px;
+  }
+
+  /* line 326, ../../sass/kolibo/bootstrap.responsive.sass */
+  .span8 {
+    width: 476px;
+  }
+
+  /* line 328, ../../sass/kolibo/bootstrap.responsive.sass */
+  .span7 {
+    width: 414px;
+  }
+
+  /* line 330, ../../sass/kolibo/bootstrap.responsive.sass */
+  .span6 {
+    width: 352px;
+  }
+
+  /* line 332, ../../sass/kolibo/bootstrap.responsive.sass */
+  .span5 {
+    width: 290px;
+  }
+
+  /* line 334, ../../sass/kolibo/bootstrap.responsive.sass */
+  .span4 {
+    width: 228px;
+  }
+
+  /* line 336, ../../sass/kolibo/bootstrap.responsive.sass */
+  .span3 {
+    width: 166px;
+  }
+
+  /* line 338, ../../sass/kolibo/bootstrap.responsive.sass */
+  .span2 {
+    width: 104px;
+  }
+
+  /* line 340, ../../sass/kolibo/bootstrap.responsive.sass */
+  .span1 {
+    width: 42px;
+  }
+
+  /* line 342, ../../sass/kolibo/bootstrap.responsive.sass */
+  .offset12 {
+    margin-left: 764px;
+  }
+
+  /* line 344, ../../sass/kolibo/bootstrap.responsive.sass */
+  .offset11 {
+    margin-left: 702px;
+  }
+
+  /* line 346, ../../sass/kolibo/bootstrap.responsive.sass */
+  .offset10 {
+    margin-left: 640px;
+  }
+
+  /* line 348, ../../sass/kolibo/bootstrap.responsive.sass */
+  .offset9 {
+    margin-left: 578px;
+  }
+
+  /* line 350, ../../sass/kolibo/bootstrap.responsive.sass */
+  .offset8 {
+    margin-left: 516px;
+  }
+
+  /* line 352, ../../sass/kolibo/bootstrap.responsive.sass */
+  .offset7 {
+    margin-left: 454px;
+  }
+
+  /* line 354, ../../sass/kolibo/bootstrap.responsive.sass */
+  .offset6 {
+    margin-left: 392px;
+  }
+
+  /* line 356, ../../sass/kolibo/bootstrap.responsive.sass */
+  .offset5 {
+    margin-left: 330px;
+  }
+
+  /* line 358, ../../sass/kolibo/bootstrap.responsive.sass */
+  .offset4 {
+    margin-left: 268px;
+  }
+
+  /* line 360, ../../sass/kolibo/bootstrap.responsive.sass */
+  .offset3 {
+    margin-left: 206px;
+  }
+
+  /* line 362, ../../sass/kolibo/bootstrap.responsive.sass */
+  .offset2 {
+    margin-left: 144px;
+  }
+
+  /* line 364, ../../sass/kolibo/bootstrap.responsive.sass */
+  .offset1 {
+    margin-left: 82px;
+  }
+
+  /* line 366, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid {
+    width: 100%;
+    *zoom: 1;
+  }
+  /* line 369, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid:before {
+    display: table;
+    line-height: 0;
+    content: "";
+  }
+  /* line 373, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid:after {
+    display: table;
+    line-height: 0;
+    content: "";
+    clear: both;
+  }
+  /* line 378, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid [class*="span"] {
+    display: block;
+    float: left;
+    width: 100%;
+    min-height: 30px;
+    margin-left: 2.76243%;
+    *margin-left: 2.70924%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  /* line 388, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid [class*="span"]:first-child {
+    margin-left: 0;
+  }
+  /* line 390, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 2.76243%;
+  }
+  /* line 392, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .span12 {
+    width: 100%;
+    *width: 99.94681%;
+  }
+  /* line 395, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .span11 {
+    width: 91.43646%;
+    *width: 91.38327%;
+  }
+  /* line 398, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .span10 {
+    width: 82.87293%;
+    *width: 82.81974%;
+  }
+  /* line 401, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .span9 {
+    width: 74.30939%;
+    *width: 74.2562%;
+  }
+  /* line 404, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .span8 {
+    width: 65.74586%;
+    *width: 65.69266%;
+  }
+  /* line 407, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .span7 {
+    width: 57.18232%;
+    *width: 57.12913%;
+  }
+  /* line 410, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .span6 {
+    width: 48.61878%;
+    *width: 48.56559%;
+  }
+  /* line 413, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .span5 {
+    width: 40.05525%;
+    *width: 40.00206%;
+  }
+  /* line 416, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .span4 {
+    width: 31.49171%;
+    *width: 31.43852%;
+  }
+  /* line 419, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .span3 {
+    width: 22.92818%;
+    *width: 22.87499%;
+  }
+  /* line 422, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .span2 {
+    width: 14.36464%;
+    *width: 14.31145%;
+  }
+  /* line 425, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .span1 {
+    width: 5.8011%;
+    *width: 5.74791%;
+  }
+  /* line 428, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset12 {
+    margin-left: 105.52486%;
+    *margin-left: 105.41848%;
+  }
+  /* line 431, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset12:first-child {
+    margin-left: 102.76243%;
+    *margin-left: 102.65605%;
+  }
+  /* line 434, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset11 {
+    margin-left: 96.96133%;
+    *margin-left: 96.85494%;
+  }
+  /* line 437, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset11:first-child {
+    margin-left: 94.1989%;
+    *margin-left: 94.09251%;
+  }
+  /* line 440, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset10 {
+    margin-left: 88.39779%;
+    *margin-left: 88.29141%;
+  }
+  /* line 443, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset10:first-child {
+    margin-left: 85.63536%;
+    *margin-left: 85.52898%;
+  }
+  /* line 446, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset9 {
+    margin-left: 79.83425%;
+    *margin-left: 79.72787%;
+  }
+  /* line 449, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset9:first-child {
+    margin-left: 77.07182%;
+    *margin-left: 76.96544%;
+  }
+  /* line 452, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset8 {
+    margin-left: 71.27072%;
+    *margin-left: 71.16434%;
+  }
+  /* line 455, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset8:first-child {
+    margin-left: 68.50829%;
+    *margin-left: 68.4019%;
+  }
+  /* line 458, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset7 {
+    margin-left: 62.70718%;
+    *margin-left: 62.6008%;
+  }
+  /* line 461, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset7:first-child {
+    margin-left: 59.94475%;
+    *margin-left: 59.83837%;
+  }
+  /* line 464, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset6 {
+    margin-left: 54.14365%;
+    *margin-left: 54.03726%;
+  }
+  /* line 467, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset6:first-child {
+    margin-left: 51.38122%;
+    *margin-left: 51.27483%;
+  }
+  /* line 470, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset5 {
+    margin-left: 45.58011%;
+    *margin-left: 45.47373%;
+  }
+  /* line 473, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset5:first-child {
+    margin-left: 42.81768%;
+    *margin-left: 42.7113%;
+  }
+  /* line 476, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset4 {
+    margin-left: 37.01657%;
+    *margin-left: 36.91019%;
+  }
+  /* line 479, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset4:first-child {
+    margin-left: 34.25414%;
+    *margin-left: 34.14776%;
+  }
+  /* line 482, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset3 {
+    margin-left: 28.45304%;
+    *margin-left: 28.34666%;
+  }
+  /* line 485, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset3:first-child {
+    margin-left: 25.69061%;
+    *margin-left: 25.58422%;
+  }
+  /* line 488, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset2 {
+    margin-left: 19.8895%;
+    *margin-left: 19.78312%;
+  }
+  /* line 491, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset2:first-child {
+    margin-left: 17.12707%;
+    *margin-left: 17.02069%;
+  }
+  /* line 494, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset1 {
+    margin-left: 11.32597%;
+    *margin-left: 11.21958%;
+  }
+  /* line 497, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .offset1:first-child {
+    margin-left: 8.56354%;
+    *margin-left: 8.45715%;
+  }
+
+  /* line 500, ../../sass/kolibo/bootstrap.responsive.sass */
+  input, textarea, .uneditable-input {
+    margin-left: 0;
+  }
+
+  /* line 502, ../../sass/kolibo/bootstrap.responsive.sass */
+  .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 20px;
+  }
+
+  /* line 504, ../../sass/kolibo/bootstrap.responsive.sass */
+  input.span12, textarea.span12, .uneditable-input.span12 {
+    width: 710px;
+  }
+
+  /* line 506, ../../sass/kolibo/bootstrap.responsive.sass */
+  input.span11, textarea.span11, .uneditable-input.span11 {
+    width: 648px;
+  }
+
+  /* line 508, ../../sass/kolibo/bootstrap.responsive.sass */
+  input.span10, textarea.span10, .uneditable-input.span10 {
+    width: 586px;
+  }
+
+  /* line 510, ../../sass/kolibo/bootstrap.responsive.sass */
+  input.span9, textarea.span9, .uneditable-input.span9 {
+    width: 524px;
+  }
+
+  /* line 512, ../../sass/kolibo/bootstrap.responsive.sass */
+  input.span8, textarea.span8, .uneditable-input.span8 {
+    width: 462px;
+  }
+
+  /* line 514, ../../sass/kolibo/bootstrap.responsive.sass */
+  input.span7, textarea.span7, .uneditable-input.span7 {
+    width: 400px;
+  }
+
+  /* line 516, ../../sass/kolibo/bootstrap.responsive.sass */
+  input.span6, textarea.span6, .uneditable-input.span6 {
+    width: 338px;
+  }
+
+  /* line 518, ../../sass/kolibo/bootstrap.responsive.sass */
+  input.span5, textarea.span5, .uneditable-input.span5 {
+    width: 276px;
+  }
+
+  /* line 520, ../../sass/kolibo/bootstrap.responsive.sass */
+  input.span4, textarea.span4, .uneditable-input.span4 {
+    width: 214px;
+  }
+
+  /* line 522, ../../sass/kolibo/bootstrap.responsive.sass */
+  input.span3, textarea.span3, .uneditable-input.span3 {
+    width: 152px;
+  }
+
+  /* line 524, ../../sass/kolibo/bootstrap.responsive.sass */
+  input.span2, textarea.span2, .uneditable-input.span2 {
+    width: 90px;
+  }
+
+  /* line 526, ../../sass/kolibo/bootstrap.responsive.sass */
+  input.span1, textarea.span1, .uneditable-input.span1 {
+    width: 28px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 530, ../../sass/kolibo/bootstrap.responsive.sass */
+  body {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  /* line 533, ../../sass/kolibo/bootstrap.responsive.sass */
+  .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+
+  /* line 536, ../../sass/kolibo/bootstrap.responsive.sass */
+  .container-fluid {
+    padding: 0;
+  }
+
+  /* line 539, ../../sass/kolibo/bootstrap.responsive.sass */
+  .dl-horizontal dt {
+    float: none;
+    width: auto;
+    clear: none;
+    text-align: left;
+  }
+  /* line 544, ../../sass/kolibo/bootstrap.responsive.sass */
+  .dl-horizontal dd {
+    margin-left: 0;
+  }
+
+  /* line 546, ../../sass/kolibo/bootstrap.responsive.sass */
+  .container {
+    width: auto;
+  }
+
+  /* line 548, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid {
+    width: 100%;
+  }
+
+  /* line 550, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row {
+    margin-left: 0;
+  }
+
+  /* line 552, ../../sass/kolibo/bootstrap.responsive.sass */
+  .thumbnails {
+    margin-left: 0;
+  }
+  /* line 554, ../../sass/kolibo/bootstrap.responsive.sass */
+  .thumbnails > li {
+    float: none;
+    margin-left: 0;
+  }
+
+  /* line 557, ../../sass/kolibo/bootstrap.responsive.sass */
+  [class*="span"], .uneditable-input[class*="span"], .row-fluid [class*="span"] {
+    display: block;
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  /* line 565, ../../sass/kolibo/bootstrap.responsive.sass */
+  .span12 {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  /* line 571, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid .span12 {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  /* line 576, ../../sass/kolibo/bootstrap.responsive.sass */
+  .row-fluid [class*="offset"]:first-child {
+    margin-left: 0;
+  }
+
+  /* line 578, ../../sass/kolibo/bootstrap.responsive.sass */
+  .input-large, .input-xlarge, .input-xxlarge, input[class*="span"], select[class*="span"], textarea[class*="span"], .uneditable-input {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  /* line 585, ../../sass/kolibo/bootstrap.responsive.sass */
+  .input-prepend input, .input-append input, .input-prepend input[class*="span"], .input-append input[class*="span"] {
+    display: inline-block;
+    width: auto;
+  }
+
+  /* line 588, ../../sass/kolibo/bootstrap.responsive.sass */
+  .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 0;
+  }
+
+  /* line 590, ../../sass/kolibo/bootstrap.responsive.sass */
+  .modal {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    left: 20px;
+    width: auto;
+    margin: 0;
+  }
+  /* line 597, ../../sass/kolibo/bootstrap.responsive.sass */
+  .modal.fade {
+    top: -100px;
+  }
+  /* line 599, ../../sass/kolibo/bootstrap.responsive.sass */
+  .modal.fade.in {
+    top: 20px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 603, ../../sass/kolibo/bootstrap.responsive.sass */
+  .nav-collapse {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+
+  /* line 605, ../../sass/kolibo/bootstrap.responsive.sass */
+  .page-header h1 small {
+    display: block;
+    line-height: 20px;
+  }
+
+  /* line 609, ../../sass/kolibo/bootstrap.responsive.sass */
+  input[type="checkbox"], input[type="radio"] {
+    border: 1px solid #cccccc;
+  }
+
+  /* line 612, ../../sass/kolibo/bootstrap.responsive.sass */
+  .form-horizontal .control-label {
+    float: none;
+    width: auto;
+    padding-top: 0;
+    text-align: left;
+  }
+  /* line 617, ../../sass/kolibo/bootstrap.responsive.sass */
+  .form-horizontal .controls {
+    margin-left: 0;
+  }
+  /* line 619, ../../sass/kolibo/bootstrap.responsive.sass */
+  .form-horizontal .control-list {
+    padding-top: 0;
+  }
+  /* line 621, ../../sass/kolibo/bootstrap.responsive.sass */
+  .form-horizontal .form-actions {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  /* line 625, ../../sass/kolibo/bootstrap.responsive.sass */
+  .media .pull-left, .media .pull-right {
+    display: block;
+    float: none;
+    margin-bottom: 10px;
+  }
+
+  /* line 629, ../../sass/kolibo/bootstrap.responsive.sass */
+  .media-object {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  /* line 632, ../../sass/kolibo/bootstrap.responsive.sass */
+  .modal {
+    top: 10px;
+    right: 10px;
+    left: 10px;
+  }
+
+  /* line 636, ../../sass/kolibo/bootstrap.responsive.sass */
+  .modal-header .close {
+    padding: 10px;
+    margin: -10px;
+  }
+
+  /* line 639, ../../sass/kolibo/bootstrap.responsive.sass */
+  .carousel-caption {
+    position: static;
+  }
+}
+@media (max-width: 979px) {
+  /* line 643, ../../sass/kolibo/bootstrap.responsive.sass */
+  body {
+    padding-top: 0;
+  }
+
+  /* line 645, ../../sass/kolibo/bootstrap.responsive.sass */
+  .navbar-fixed-top, .navbar-fixed-bottom {
+    position: static;
+  }
+
+  /* line 647, ../../sass/kolibo/bootstrap.responsive.sass */
+  .navbar-fixed-top {
+    margin-bottom: 20px;
+  }
+
+  /* line 649, ../../sass/kolibo/bootstrap.responsive.sass */
+  .navbar-fixed-bottom {
+    margin-top: 20px;
+  }
+
+  /* line 651, ../../sass/kolibo/bootstrap.responsive.sass */
+  .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+    padding: 5px;
+  }
+
+  /* line 654, ../../sass/kolibo/bootstrap.responsive.sass */
+  .navbar .container {
+    width: auto;
+    padding: 0;
+  }
+  /* line 657, ../../sass/kolibo/bootstrap.responsive.sass */
+  .navbar .brand {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 0 0 0 -5px;
+  }
+
+  /* line 661, ../../sass/kolibo/bootstrap.responsive.sass */
+  .nav-collapse {
+    clear: both;
+  }
+  /* line 663, ../../sass/kolibo/bootstrap.responsive.sass */
+  .nav-collapse .nav {
+    float: none;
+    margin: 0 0 10px;
+  }
+  /* line 667, ../../sass/kolibo/bootstrap.responsive.sass */
+  .nav-collapse .nav > li {
+    float: none;
+  }
+  /* line 669, ../../sass/kolibo/bootstrap.responsive.sass */
+  .nav-collapse .nav > li > a {
+    margin-bottom: 2px;
+  }
+  /* line 671, ../../sass/kolibo/bootstrap.responsive.sass */
+  .nav-collapse .nav > .divider-vertical {
+    display: none;
+  }
+  /* line 673, ../../sass/kolibo/bootstrap.responsive.sass */
+  .nav-collapse .nav .nav-header {
+    color: #777777;
+    text-shadow: none;
+  }
+  /* line 676, ../../sass/kolibo/bootstrap.responsive.sass */
+  .nav-collapse .nav > li > a {
+    padding: 9px 15px;
+    font-weight: bold;
+    color: #777777;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  /* line 683, ../../sass/kolibo/bootstrap.responsive.sass */
+  .nav-collapse .dropdown-menu a {
+    padding: 9px 15px;
+    font-weight: bold;
+    color: #777777;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  /* line 690, ../../sass/kolibo/bootstrap.responsive.sass */
+  .nav-collapse .btn {
+    padding: 4px 10px 4px;
+    font-weight: normal;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+  }
+  /* line 696, ../../sass/kolibo/bootstrap.responsive.sass */
+  .nav-collapse .dropdown-menu li + li a {
+    margin-bottom: 2px;
+  }
+  /* line 698, ../../sass/kolibo/bootstrap.responsive.sass */
+  .nav-collapse .nav > li > a:hover, .nav-collapse .dropdown-menu a:hover {
+    background-color: #f2f2f2;
+  }
+
+  /* line 701, ../../sass/kolibo/bootstrap.responsive.sass */
+  .navbar-inverse .nav-collapse .nav > li > a, .navbar-inverse .nav-collapse .dropdown-menu a {
+    color: #999999;
+  }
+  /* line 703, ../../sass/kolibo/bootstrap.responsive.sass */
+  .navbar-inverse .nav-collapse .nav > li > a:hover, .navbar-inverse .nav-collapse .dropdown-menu a:hover {
+    background-color: #111111;
+  }
+
+  /* line 706, ../../sass/kolibo/bootstrap.responsive.sass */
+  .nav-collapse.in .btn-group {
+    padding: 0;
+    margin-top: 5px;
+  }
+  /* line 709, ../../sass/kolibo/bootstrap.responsive.sass */
+  .nav-collapse .dropdown-menu {
+    position: static;
+    top: auto;
+    left: auto;
+    display: none;
+    float: none;
+    max-width: none;
+    padding: 0;
+    margin: 0 15px;
+    background-color: transparent;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  /* line 726, ../../sass/kolibo/bootstrap.responsive.sass */
+  .nav-collapse .open > .dropdown-menu {
+    display: block;
+  }
+  /* line 729, ../../sass/kolibo/bootstrap.responsive.sass */
+  .nav-collapse .dropdown-menu:before, .nav-collapse .dropdown-menu:after, .nav-collapse .dropdown-menu .divider {
+    display: none;
+  }
+  /* line 732, ../../sass/kolibo/bootstrap.responsive.sass */
+  .nav-collapse .nav > li > .dropdown-menu:before, .nav-collapse .nav > li > .dropdown-menu:after {
+    display: none;
+  }
+  /* line 734, ../../sass/kolibo/bootstrap.responsive.sass */
+  .nav-collapse .navbar-form, .nav-collapse .navbar-search {
+    float: none;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  /* line 744, ../../sass/kolibo/bootstrap.responsive.sass */
+  .navbar-inverse .nav-collapse .navbar-form, .navbar-inverse .nav-collapse .navbar-search {
+    border-top-color: #111111;
+    border-bottom-color: #111111;
+  }
+
+  /* line 747, ../../sass/kolibo/bootstrap.responsive.sass */
+  .navbar .nav-collapse .nav.pull-right {
+    float: none;
+    margin-left: 0;
+  }
+
+  /* line 750, ../../sass/kolibo/bootstrap.responsive.sass */
+  .nav-collapse {
+    height: 0;
+    overflow: hidden;
+  }
+  /* line 753, ../../sass/kolibo/bootstrap.responsive.sass */
+  .nav-collapse.collapse {
+    height: 0;
+    overflow: hidden;
+  }
+
+  /* line 756, ../../sass/kolibo/bootstrap.responsive.sass */
+  .navbar .btn-navbar {
+    display: block;
+  }
+
+  /* line 758, ../../sass/kolibo/bootstrap.responsive.sass */
+  .navbar-static .navbar-inner {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+@media (min-width: 980px) {
+  /* line 763, ../../sass/kolibo/bootstrap.responsive.sass */
+  .nav-collapse.collapse {
+    height: auto !important;
+    overflow: visible !important;
+  }
+}
